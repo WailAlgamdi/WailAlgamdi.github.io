@@ -7,11 +7,10 @@ body {
     color: white;
 }
 
-
-h2{
+h2 {
     color: #FFC000;
     text-transform: uppercase;
-    font-size: 2rem; 
+    font-size: 2rem;
 }
 
 header {
@@ -26,7 +25,6 @@ header {
     justify-content: center;
     z-index: 1000;
 }
-
 
 .nav-menu {
     list-style: none;
@@ -67,11 +65,10 @@ header {
     transition: background-color 0.3s ease;
 }
 
+
 .section-box {
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    padding: 4rem 2rem;
+    width: 100%;
     color: white;
     font-size: 2rem;
     transition: background-color 0.5s ease-in-out;
@@ -83,14 +80,12 @@ header {
     box-shadow: 0px 0px 2em rgba(0, 107, 56, 0.2);
 }
 
-
-
+/* About Section */
 .about-me {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 80vh;
-    padding: 2rem;
+    padding: 4rem 2rem;
 }
 
 .about-container {
@@ -148,13 +143,12 @@ header {
     transform: scale(1.05);
 }
 
-
+/* Experience Section */
 .experience {
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
-    padding: 8rem 3rem;
 }
 
 .experience-banner {
@@ -172,6 +166,7 @@ header {
     width: 80vw;
     max-width: 1000px;
     margin-top: 2rem;
+    flex-wrap: wrap;
 }
 
 .experience-item {
@@ -184,6 +179,7 @@ header {
     align-items: center;
     text-align: center;
     transition: transform 0.3s ease-in-out;
+    margin-bottom: 1rem;
 }
 
 .experience-item:hover {
@@ -212,12 +208,12 @@ header {
     max-width: 250px;
 }
 
+/* Certificates Section */
 .certificates {
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
-    padding: 1rem 2rem;
 }
 
 .certificates-container {
@@ -227,6 +223,7 @@ header {
     width: 80vw;
     max-width: 1000px;
     margin-top: 2rem;
+    flex-wrap: wrap;
 }
 
 .certificate-item {
@@ -240,6 +237,7 @@ header {
     text-align: center;
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
     box-shadow: 0px 4px 12px rgba(0, 143, 84, 0.2);
+    margin-bottom: 1rem;
 }
 
 .certificate-item:hover {
@@ -262,13 +260,12 @@ header {
     color: #FFC000;
 }
 
-
+/* Projects Section */
 .projects {
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
-    padding: 36rem 2rem;
 }
 
 .projects-container {
@@ -358,12 +355,12 @@ header {
     border: 3px solid #008F54; 
 }
 
+/* Skills Section */
 .skills {
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
-    padding: 3rem 2rem;
 }
 
 .skills-container {
@@ -373,6 +370,7 @@ header {
     padding: 2rem;
     border-radius: 12px;
     box-shadow: 0px 4px 10px rgba(0, 143, 84, 0.2);
+    margin-top: 2rem;
 }
 
 .skills-list {
@@ -388,12 +386,12 @@ header {
     color: #FFC000; 
 }
 
+/* Contact Section */
 .contact {
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
-    padding: 3rem 2rem;
 }
 
 .contact-container {
@@ -401,11 +399,12 @@ header {
     justify-content: center;
     gap: 2rem;
     margin-top: 1.5rem;
+    flex-wrap: wrap; 
 }
 
 .contact-item {
     display: flex;
-    flex-direction: column;
+    flex-direction: column; 
     align-items: center;
     text-decoration: none;
     color: #008F54;
@@ -429,14 +428,13 @@ header {
 
 
 
-/* Mobile Version  */
+/* Mobile Version */
 @media (max-width: 768px) {
     h2 {
         font-size: 1.5rem; 
     }
+
     header {
-        position: sticky;
-        top: 0;
         padding: 1vh 0;
         width: 100vw;
         border-radius: 0 0 1.5em 1.5em;
@@ -464,15 +462,8 @@ header {
         margin: 0 0 1rem 0; 
     }
 
-    .about-me {
-        padding-top: 9rem; 
-        padding-bottom: 9rem; 
-
-    }
-
-    .experience {
-        padding-top: 18rem; 
-        padding-bottom: 18rem; 
+    .about-text {
+        text-align: center;
     }
 
     .experience-list {
@@ -484,14 +475,11 @@ header {
         width: 90%;
         max-width: 350px;
     }
+
     .experience-banner {
         width: 90%;
     }
 
-    .certificate{
-        padding-top: 14rem; 
-        padding-bottom: 3rem; 
-    }
     .certificates-container {
         flex-direction: column;
         align-items: center;
@@ -507,8 +495,6 @@ header {
         width: 200px; 
     }
 
-    
-
     .projects-container {
         width: 90%;
     }
@@ -518,13 +504,7 @@ header {
     }
 
     .project-item p {
-        font-size: 0.9rem;
-    }
-
-    .project-links {
-        flex-direction: row;
-        justify-content: center;
-        gap: 1rem;
+        font-size: 1rem;
     }
 
     .skills-container {
@@ -537,13 +517,17 @@ header {
     }
 
     .contact-container {
-        flex-direction: column;
-        align-items: center;
         gap: 1.5rem;
     }
 
+    .contact-item {
+        flex-direction: row;
+        gap: 0.5rem;
+        justify-content: flex-start;
+    }
+
     .contact-item img {
-        width: 50px; 
+        width: 40px; 
     }
 
     .contact-item p {
