@@ -128,7 +128,8 @@ header {
 .cv-button {
     display: inline-block;
     margin-top: 1rem;
-    padding: 0.8rem 1.5rem;
+    padding: 0.8rem 2.5rem;
+    margin-left: 9.5rem;
     background-color: #FFC000; 
     color: black;
     font-size: 1.2rem;
